@@ -1,0 +1,113 @@
+<!--
+
+https://gohugo.io/templates/lookup-order/#hugo-layouts-lookup-rules
+
+layouts/index.html.html 
+layouts/home.html.html 
+layouts/list.html.html 
+layouts/index.html 
+layouts/home.html 
+layouts/list.html 
+layouts/_default/index.html.html 
+layouts/_default/home.html.html 
+layouts/_default/list.html.html 
+layouts/_default/index.html 
+layouts/_default/home.html 
+layouts/_default/list.html]
+
+-->
+
+<html>
+
+<!--
+
+You can use <meta> tag to specify important keywords related to the document and later these keywords are used by the search engines while indexing your webpage for searching purpose.
+<meta name = "keywords" content = "blog, CS, Computer Science" />
+
+You can use <meta> tag to give a short description about the document. This again can be used by various search engines while indexing your webpage for searching purpose.
+<meta name = "description" content = "about" />
+
+-->
+
+<meta name = "author" content = "eel94nuy@gmail.com" />
+<!--You can use <meta> tag to give information about when last time the document was updated. This information can be used by various web browsers while refreshing your webpage.-->
+<meta name = "revised" content = "eel94nuy, 07/11/20" />
+
+<!--
+
+You can use <meta> tag to specify character set used within the webpage.
+
+https://webmasters.stackexchange.com/questions/12335/should-i-escape-the-apostrophe-character-with-its-html-entity-39
+You should ideally use as little escaping as possible and use UTF-8 to express characters natively. To do this you need an editor that can handle UTF-8 as well as a correct charset declaration
+
+< &lt;
+> &gt;
+" &quot;
+& &amp;
+' &#39;
+-->
+<meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8" />
+
+<head>
+    <title>eel94nuy</title>
+</head>
+
+<!--
+One em is the height of the font.
+text-indent: 2em;
+-->
+
+<style type="text/css">
+pre
+{
+    /*
+    https://www.w3.org/MarkUp/Guide/Style.html
+
+    My second rule is to set the font family for pre elements, as some browsers forget to use a fixed pitch font when you set the font size or other properties for pre.
+
+    A monospaced font, also called a fixed-pitch, fixed-width, or non-proportional font, is a font whose letters and characters each occupy the same amount of horizontal space.
+    */
+    
+    font-weight: 100;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 15px;
+    color: black;
+
+    /*
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    */
+    
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+</style>
+
+<style type="text/css">
+div.box
+{
+    border: solid;
+    border-width: thin;
+    width: 95%;
+    padding: 2.5%;
+    background: rgb(255,255,204);
+}
+</style>
+
+<div class="box">
+<pre>
+    The best proven way to pick up new knowledge (or as far as I can tell) for me has always been the same; go head-first dive into the topic until I can knock some sense out of the paper, and soak in it to the degree that makes me well-informed enough (though it's never enough) to retell it to anyone struggling to get the gist of the concept, and most importantly to my forgetful, ignorant, and silly old future self who may need it the most.
+
+    This is where any writable medium can come in hand. I’ve always kept myself with the stack of draft paper wherever I go (old-fashioned, but highly sophisticated innit?) written in the most casual and stripped down way possible (poor myself’s brain can only comprehend CS topics explained in baby language). To writer’s grief, most of them serve no purpose at all when come back later, as oftentimes they get lost completely due time, or are scribbled in a manner way too indistinct and unintelligible to decipher.
+
+    Praying this migration to the digital medium will help me get by all the troubles I’ve had in the past, I as well hope my materials can help saving some troubles for the fellow programmers out there. And always remember to take these with the grain of salt. Here's the one for my very first published writing. 🍻 Skål!
+    
+    071120 Yun
+</pre>
+</div>
